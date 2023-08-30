@@ -1,0 +1,56 @@
+body {
+  margin: 0px 0px;
+  padding: 0px;
+  display: flex;
+}
+
+html {
+  font-family: "Lexend", sans-serif;
+  font-size: 24px;
+}
+
+.contentContainer {
+  padding: 0px 183px;
+}
+
+.navbarContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 183px;
+  width: 100%;
+  background-color: #03a64a;
+  max-height: 86px;
+  justify-content: space-between;
+}
+
+.logoContainer {
+  max-width: 163px;
+  max-height: 86px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 1rem;
+}
+
+.navbarItemWrapper {
+  flex-direction: row;
+  min-width: 347px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbarItemContainer {
+  min-width: 163px;
+  min-height: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbarItem {
+  color: white;
+  font-size: 1rem;
+}
