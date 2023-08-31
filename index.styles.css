@@ -2,6 +2,8 @@ body {
   margin: 0px 0px;
   padding: 0px;
   display: flex;
+  flex-direction: column;
+  background-color: #0d0d0d;
 }
 
 html {
@@ -9,15 +11,24 @@ html {
   font-size: 24px;
 }
 
-.contentContainer {
-  padding: 0px 183px;
+p > span {
+  color: #05f26c;
+}
+
+select {
+  font-family: "Lexend", sans-serif;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+select:focus {
+  outline: none;
 }
 
 .navbarContainer {
   display: flex;
   flex-direction: row;
   padding: 0px 183px;
-  width: 100%;
   background-color: #03a64a;
   max-height: 86px;
   justify-content: space-between;
@@ -52,5 +63,141 @@ html {
 
 .navbarItem {
   color: white;
+
   font-size: 1rem;
+}
+
+.contentContainer {
+  padding: 55px 183px 0px 183px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputSideContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.imageSideContainer {
+}
+
+.titleContainer {
+}
+
+.title {
+  font-size: 2rem;
+  color: white;
+}
+
+.formContainer {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputContainer {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.individualInputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.inputLabelContainer {
+  margin-bottom: 7px;
+}
+
+.inputLabel {
+  font-size: 0.8rem;
+  color: white;
+}
+
+.inputStyle {
+  font-family: "Lexend", sans-serif;
+  min-height: 1.2rem;
+  max-width: 270px;
+  border-radius: 6px;
+  border: none;
+  padding: 0px 6px;
+}
+
+.inputStyle:focus {
+  outline: none;
+}
+
+.inputFileContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputFileLabelContainer {
+  margin-bottom: 6px;
+}
+.fileInput {
+  display: none;
+}
+.fileInputButton {
+  border: 0px;
+  outline: none;
+  font-weight: bold;
+  padding: 6px 20px;
+  text-align: center;
+  font-size: 0.6rem;
+  min-height: 32px;
+  font-family: "Lexend", sans-serif;
+  display: flex;
+  color: white;
+  border-radius: 6px;
+  background-color: #03a64a;
+  flex-direction: column;
+  max-width: 95px;
+  transition: 0.5s;
+}
+
+.fileInputButton:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: #08e266;
+}
+
+.inputFileNameContainer {
+}
+
+.inputFileName {
+  color: white;
+  font-size: 0.6rem;
+}
+
+.submitButtonContainer {
+  margin-top: 1.5rem;
+}
+
+.submitButton {
+  border: 0px;
+  outline: none;
+  font-weight: bold;
+  padding: 5px 20px;
+  text-align: center;
+  font-size: 0.7rem;
+  min-height: 32px;
+  font-family: "Lexend", sans-serif;
+  display: flex;
+  color: white;
+  border-radius: 6px;
+  background-color: #05f26c;
+  flex-direction: column;
+  align-items: center;
+  min-width: 150px;
+}
+
+.submitButton:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: #028f3f;
 }

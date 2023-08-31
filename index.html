@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+   
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,6 +28,79 @@
         </nav>
       </nav>
     </header>
-  ''
+    <section   class="contentContainer">
+      <div class="inputSideContainer">
+        <div class="titleContainer">
+          <p class="title">
+            Faça <span>upload</span> dos seus <br />
+            hits favoritos!
+          </p>
+        </div>
+        <div onsubmit="(e) => e.preventDefault() " class="formContainer" >
+          <div class="individualInputContainer">
+            <div class="inputContainer">
+              <div class="inputLabelContainer">
+                <label for="artistName" class="inputLabel"
+                  >Nome do artista</label
+                >
+              </div>
+              <input
+                id="artistName"
+                placeholder="Terno rei"
+                type="text"
+                class="inputStyle"
+              />
+            </div>
+          </div>
+          <div class="individualInputContainer">
+            <div class="inputContainer">
+              <div class="inputLabelContainer">
+                <label for="artistName" class="inputLabel"
+                  >Nome da música</label
+                >
+              </div>
+              <input
+                id="musicName"
+                placeholder="Yoko"
+                type="text"
+                class="inputStyle"
+              />
+            </div>
+          </div>
+          <div class="individualInputContainer">
+            <div class="inputContainer">
+              <div class="inputLabelContainer">
+                <label for="artistName" class="inputLabel"
+                  >Estilo</label
+                >
+                <div/>
+              <select name="musicStyle" id="musicStyle">
+                <option value="valor1">Valor 1</option>
+                <option value="valor2" selected>Valor 2</option>
+                <option value="valor3">Valor 3</option>
+              </select>
+            </div>
+          </div>
+          <div class="inputFileContainer">
+            <div class="inputFileLabelContainer">
+              <label for="audioInput" class="inputLabel">Audio</label>
+            </div>
+            <button onclick="openFileDialog()"  class="fileInputButton">Upload</button>
+            <div class="inputFileNameContainer">
+              <p id="fileName" class="inputFileName">
+              </p>
+            </div>
+            <input onchange="updateFileName()" id="fileInput"  class="fileInput" type="file"/>
+            <div class="submitButtonContainer">
+              <button class="submitButton">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="imageSideContainer">
+        <div>monda</div>
+      </div>
+    </section>
+    <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
