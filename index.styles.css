@@ -73,12 +73,24 @@ select:focus {
   justify-content: space-between;
 }
 
+
+
 .inputSideContainer {
   display: flex;
   flex-direction: column;
 }
 
 .imageSideContainer {
+  max-width: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
+.imageSideContainer > img {
+  width: 100%;
+
 }
 
 .titleContainer {
@@ -201,3 +213,4 @@ select:focus {
   cursor: pointer;
   background-color: #028f3f;
 }
+
