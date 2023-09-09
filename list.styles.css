@@ -1,0 +1,167 @@
+body {
+  margin: 0px 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: #0d0d0d;
+}
+
+html {
+  font-family: "Lexend", sans-serif;
+  font-size: 24px;
+}
+
+a {
+  font-style: normal;
+  text-decoration: none;
+}
+
+.navbarContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 183px;
+  background-color: #03a64a;
+  max-height: 86px;
+  justify-content: space-between;
+}
+
+.logoContainer {
+  max-width: 163px;
+  max-height: 86px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 1rem;
+}
+
+.navbarItemWrapper {
+  flex-direction: row;
+  min-width: 347px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbarItemContainer {
+  min-width: 163px;
+  min-height: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbarItem {
+  color: white;
+
+  font-size: 1rem;
+}
+
+.contentContainer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleWrapper {
+}
+
+.title {
+  margin: 0px;
+  color: #05f26c;
+  font-size: 2rem;
+}
+
+.subtitleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle {
+  margin: 0px;
+  color: white;
+  text-align: center;
+  width: 40%;
+}
+
+.inputWrapper {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputLabelWrapper {
+  margin-bottom: 8px;
+}
+
+.label {
+  font-size: 1rem;
+  color: white;
+}
+
+input {
+  font-family: "Lexend", sans-serif;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  padding: 10px 6px;
+  border-radius: 6px;
+  border: none;
+}
+
+input:focus {
+  border: 2px solid #03a64a;
+}
+
+input:focus {
+  outline: none;
+}
+
+.buttonWrapper {
+  margin-top: 54px;
+}
+
+button {
+  font-family: "Lexend", sans-serif;
+  font-size: 1rem;
+  background-color: #05f26c;
+  outline: none;
+  border-radius: 6px;
+  border-width: 0px;
+  padding: 10px 30px;
+  color: white;
+  transition: 0.5s;
+}
+
+button:hover {
+  transition: 0.5s;
+  background-color: #03411e;
+  cursor: pointer;
+}
+
+.tableWrapper {
+  margin-top: 3rem;
+}
+
+table {
+  outline: none;
+  border-collapse: collapse;
+  background-color: #d9d9d9;
+  font-family: "Lexend", sans-serif;
+  border-width: 1px;
+  border-style: solid;
+  padding: 20px;
+}
+
+td,
+th {
+  border-radius: 15px;
+  padding: 12px; /* Adicione algum espaçamento interno para melhorar a aparência */
+}

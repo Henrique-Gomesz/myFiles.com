@@ -1,11 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="list.styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend&display=swap"
+      rel="stylesheet"
+    />
+    <title>Listar</title>
+  </head>
+  <body>
+    <header class="navbarContainer">
+      <div class="logoContainer">
+        <a href="index.html">
+          <p class="logo">MyHits.com</p>
+        </a>
+      </div>
+      <nav class="navbarItemWrapper">
+        <nav class="navbarItemContainer">
+          <a href="./index.html">
+            <p class="navbarItem">Upload</p>
+          </a>
+        </nav>
+        <nav class="navbarItemContainer">
+          <a href="list.html">
+            <p class="navbarItem">Listar</p>
+          </a>
+        </nav>
+      </nav>
+    </header>
+    <section class="contentContainer">
+      <div class="titleWrapper">
+        <p class="title">Listar Tracks</p>
+      </div>
+      <div class="subtitleWrapper">
+        <p class="subtitle">
+          Para listar suas tracks preferidas basta fornecer qualquer informação
+          á respeito. e.g: Nome, estilo ou cantor
+        </p>
+      </div>
+      <div class="inputWrapper">
+        <div class="inputLabelWrapper">
+          <label for="search" class="label">Palavras-chave</label>
+        </div>
+        <input
+          id="search"
+          name="search"
+          placeholder="Nome música, nome artitsa, estilo"
+        />
+      </div>
+
+      <div class="buttonWrapper">
+        <button class="">Buscar</button>
+      </div>
+      <div class="tableWrapper">
+        <table border="2">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Artista</th>
+              <th>Estilo</th>
+              <th style="border-right: 0px">Play</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Song 1</td>
+              <td>Artist 1</td>
+              <td>Style 1</td>
+              <td style="border-right: 0px">
+                <audio controls>
+                  <source
+                    src="LoveMyLife_popinternacional_'RobbieWilliams.mp3"
+                    type="audio/mpeg"
+                  />
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>Song 2</td>
+              <td>Artist 2</td>
+              <td>Style 2</td>
+              <td style="border-right: 0px">
+                <audio controls>
+                  <source
+                    src="LoveMyLife_popinternacional_'RobbieWilliams.mp3"
+                    type="audio/mpeg"
+                  />
+                </audio>
+              </td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </body>
 </html>

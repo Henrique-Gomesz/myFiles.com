@@ -11,6 +11,11 @@ html {
   font-size: 24px;
 }
 
+a {
+  font-style: normal;
+  text-decoration: none;
+}
+
 p > span {
   color: #05f26c;
 }
@@ -73,8 +78,6 @@ select:focus {
   justify-content: space-between;
 }
 
-
-
 .inputSideContainer {
   display: flex;
   flex-direction: column;
@@ -85,12 +88,10 @@ select:focus {
   justify-content: center;
   align-items: center;
   display: flex;
-
 }
 
 .imageSideContainer > img {
   width: 100%;
-
 }
 
 .titleContainer {
@@ -213,4 +214,3 @@ select:focus {
   cursor: pointer;
   background-color: #028f3f;
 }
-

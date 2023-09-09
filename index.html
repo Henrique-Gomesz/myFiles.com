@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-   
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,24 +12,29 @@
       href="https://fonts.googleapis.com/css2?family=Lexend&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Upload</title>
   </head>
   <body>
-    
     <header class="navbarContainer">
       <div class="logoContainer">
-        <p class="logo">MyHits.com</p>
+        <a href="/">
+          <p class="logo">MyHits.com</p>
+        </a>
       </div>
       <nav class="navbarItemWrapper">
         <nav class="navbarItemContainer">
-          <p class="navbarItem">Upload</p>
+          <a href="">
+            <p class="navbarItem">Upload</p>
+          </a>
         </nav>
         <nav class="navbarItemContainer">
-          <p class="navbarItem">Listar</p>
+          <a href="list.html">
+            <p class="navbarItem">Listar</p>
+          </a>
         </nav>
       </nav>
     </header>
-    <section   class="contentContainer">
+    <section class="contentContainer">
       <div class="inputSideContainer">
         <div class="titleContainer">
           <p class="title">
@@ -38,7 +42,7 @@
             hits favoritos!
           </p>
         </div>
-        <div onsubmit="(e) => e.preventDefault() " class="formContainer" >
+        <div onsubmit="(e) => e.preventDefault() " class="formContainer">
           <div class="individualInputContainer">
             <div class="inputContainer">
               <div class="inputLabelContainer">
@@ -72,9 +76,7 @@
           <div class="individualInputContainer">
             <div class="inputContainer">
               <div class="inputLabelContainer">
-                <label for="artistName" class="inputLabel"
-                  >Estilo</label
-                >
+                <label for="artistName" class="inputLabel">Estilo</label>
               </div>
               <div>
                 <select name="musicStyle" id="musicStyle">
@@ -89,12 +91,18 @@
             <div class="inputFileLabelContainer">
               <label for="audioInput" class="inputLabel">Audio</label>
             </div>
-            <button onclick="openFileDialog()"  class="fileInputButton">Upload</button>
+            <button onclick="openFileDialog()" class="fileInputButton">
+              Upload
+            </button>
             <div class="inputFileNameContainer">
-              <p id="fileName" class="inputFileName">
-              </p>
+              <p id="fileName" class="inputFileName"></p>
             </div>
-            <input onchange="updateFileName()" id="fileInput"  class="fileInput" type="file"/>
+            <input
+              onchange="updateFileName()"
+              id="fileInput"
+              class="fileInput"
+              type="file"
+            />
             <div class="submitButtonContainer">
               <button class="submitButton">Enviar</button>
             </div>
@@ -102,12 +110,10 @@
         </div>
       </div>
       <div class="imageSideContainer">
-        
-        <img src="assets/notebook.png" alt="">
+        <img src="assets/notebook.png" alt="" />
       </div>
     </section>
-    
-    
+
     <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
